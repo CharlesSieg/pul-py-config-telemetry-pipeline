@@ -1,0 +1,9 @@
+config:
+  aws:region: us-east-1
+  telemetry-pipeline:project_name: myapp
+  telemetry-pipeline:environment: dev
+  telemetry-pipeline:firehose_buffer_size_mb: "5"
+  telemetry-pipeline:firehose_buffer_interval_seconds: "300"
+  telemetry-pipeline:s3_lifecycle_ia_days: "30"
+  telemetry-pipeline:s3_lifecycle_expiration_days: "90"
+  telemetry-pipeline:glue_crawler_schedule: "cron(0 */6 * * ? *)"

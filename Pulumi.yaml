@@ -1,0 +1,6 @@
+name: telemetry-pipeline
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Serverless iOS telemetry pipeline (Pinpoint → Firehose → S3 → Glue → Athena)
